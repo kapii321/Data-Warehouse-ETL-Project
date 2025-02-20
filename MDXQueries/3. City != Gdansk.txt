@@ -1,0 +1,12 @@
+SELECT
+  
+{ [Measures].[Average Grade] } ON COLUMNS,
+ 
+ { 
+    FILTER(
+[Students].[City].[City].Members,
+      [Students].[City].CurrentMember.Name <> "Gdansk"
+    )
+  } ON ROWS
+
+FROM [DW Schema School]

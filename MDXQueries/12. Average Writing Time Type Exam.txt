@@ -1,0 +1,8 @@
+SELECT
+  
+{ [Measures].[AverageWritingTime] } ON COLUMNS,
+  
+{ [Exam].[Type].[Type].Members } ON ROWS
+
+FROM [DW Schema School]
+

@@ -1,0 +1,4 @@
+SELECT
+    { [Measures].[Average Grade] } ON COLUMNS,
+    { [Time].[Time Of Day].[Morning], [Time].[Time Of Day].[Afternoon] } ON ROWS
+FROM [DW Schema School]

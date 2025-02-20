@@ -1,0 +1,10 @@
+SELECT
+    {[Measures].[Average Satisfaction]} ON COLUMNS,
+    {
+        TopCount(
+            [Exam].[Type].[Type].Members,
+            1,
+            [Measures].[Average Satisfaction]
+        )
+    } ON ROWS
+FROM [DW Schema School]

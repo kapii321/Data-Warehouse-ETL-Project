@@ -1,0 +1,21 @@
+WITH
+    MEMBER [Measures].[February Avg Satisfaction] AS
+        AVG(
+            [Date].[Month].[February],
+            [Measures].[Average Satisfaction]
+        )
+    MEMBER [Measures].[March Avg Satisfaction] AS
+        AVG(
+            [Date].[Month].[March],
+            [Measures].[Average Satisfaction]
+        )
+SELECT
+    {
+        [Measures].[February Avg Satisfaction],
+        [Measures].[March Avg Satisfaction]
+    } ON COLUMNS,
+    {[Teachers].[Title].[Title].Members} ON ROWS
+FROM [DW Schema School]
+WHERE (
+    [Date].[Year].[2021]
+)

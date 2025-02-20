@@ -1,0 +1,10 @@
+SELECT
+    [Measures].[Average Grade]ON COLUMNS,
+    { BOTTOMCOUNT([Class].[Name].Members, 1, SUM([Measures].[Average Grade])) } ON ROWS
+FROM [DW Schema School]
+
+
+SELECT
+    { [Measures].[Average Grade] } ON COLUMNS,
+    { [Class].[Name].[Name].Members } ON ROWS
+FROM [DW Schema School]

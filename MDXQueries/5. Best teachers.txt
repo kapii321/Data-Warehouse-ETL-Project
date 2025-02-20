@@ -1,0 +1,12 @@
+SELECT
+   
+ { [Measures].[Average Grade] } ON COLUMNS,
+   
+ { TOPCOUNT([Teachers].[T Index].[T Index].Members, 3, AVG([Measures].[Average Grade]))} ON ROWS
+
+FROM [DW Schema School]
+WHERE (
+[Date].[Year].[2021],
+[Date].[Month].[March]
+)
+

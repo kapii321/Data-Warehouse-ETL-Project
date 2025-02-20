@@ -1,0 +1,4 @@
+SELECT
+    {[Measures].[Average Satisfaction]} ON COLUMNS,
+    {[Supervisor].[Gender].[Gender].Members} ON ROWS
+FROM [DW Schema School]

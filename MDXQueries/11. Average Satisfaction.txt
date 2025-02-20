@@ -1,0 +1,8 @@
+SELECT
+  
+{ [Measures].[Average Satisfaction] } ON COLUMNS,
+  
+{ [Students].[Age Category].[Age Category].Members } ON ROWS
+
+FROM [DW Schema School]
+

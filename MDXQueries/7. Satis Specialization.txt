@@ -1,0 +1,12 @@
+WITH
+MEMBER [Measures].[Highest Avg Satisfaction] AS
+    MAX([Class].[Specialization].[Specialization].Members, [Measures].[Average Satisfaction])
+
+SELECT
+    {[Measures].[Highest Avg Satisfaction]} ON COLUMNS,
+    TOPCOUNT(
+        [Class].[Specialization].[Specialization].Members,
+        1,
+        [Measures].[Highest Avg Satisfaction]
+    ) ON ROWS
+FROM [DW Schema School]
