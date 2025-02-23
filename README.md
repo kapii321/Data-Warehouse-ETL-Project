@@ -17,7 +17,9 @@ This project demonstrates the full lifecycle of data warehouse development:
 # Repository Structure
 
 **CreatingDW/:** SQL scripts for data warehouse schema
+
 **CreatingRDB/:** SQL scripts for source database schema
+
 **Descriptions/:** Documentation
 
 - Business process specifications
@@ -27,6 +29,7 @@ This project demonstrates the full lifecycle of data warehouse development:
 
 
 **ETLProcessScripts/:** SSIS package SQL components
+
 **GeneratingData/:**
 
 - Python script for generating sample data
