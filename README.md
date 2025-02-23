@@ -1,9 +1,9 @@
-**Data Warehouse ETL Project**
+# Data Warehouse ETL Project
 
 A comprehensive end-to-end data warehousing solution implemented using SQL Server Integration Services (SSIS) that demonstrates the complete lifecycle of data warehouse development.
 
 
-**Project Overview**
+# Project Overview
 
 This project demonstrates the full lifecycle of data warehouse development:
 
@@ -14,7 +14,7 @@ This project demonstrates the full lifecycle of data warehouse development:
 - Data generation for testing at scale
 - MDX query implementation
 
-**Repository Structure**
+# Repository Structure
 
 **CreatingDW/:** SQL scripts for data warehouse schema
 **CreatingRDB/:** SQL scripts for source database schema
@@ -36,7 +36,7 @@ This project demonstrates the full lifecycle of data warehouse development:
 
 **MDXQueries/:** 10 sample MDX queries for business intelligence
 
-**Technologies Used**
+# Technologies Used
 
 - Microsoft SQL Server
 - SQL Server Integration Services (SSIS)
@@ -45,7 +45,7 @@ This project demonstrates the full lifecycle of data warehouse development:
 - SQL (T-SQL)
 - MDX (Multidimensional Expressions)
 
-**Features**
+# Features
 
 - Scalable data warehouse design
 - Automated data generation supporting millions of records
@@ -53,7 +53,7 @@ This project demonstrates the full lifecycle of data warehouse development:
 - Business intelligence queries
 - OLAP cube implementation
 
-**Project Implementation**
+# Project Implementation
 
 The ETL process is implemented as an SSIS project in Visual Studio, integrating:
 
@@ -62,7 +62,7 @@ The ETL process is implemented as an SSIS project in Visual Studio, integrating:
 - Loading into dimensional model
 - Error handling and logging
 
-**Project Highlights**
+# Project Highlights
 
 - Handles large-scale data (1M+ rows per table)
 - Implements best practices in data warehouse design
@@ -70,7 +70,7 @@ The ETL process is implemented as an SSIS project in Visual Studio, integrating:
 - Features automated data generation for testing
 - Supports complex business intelligence queries
 
-**Development Process**
+# Development Process
 
 1. Business Requirements Analysis
 
