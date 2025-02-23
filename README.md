@@ -4,6 +4,7 @@ A comprehensive end-to-end data warehousing solution implemented using SQL Serve
 
 
 **Project Overview**
+
 This project demonstrates the full lifecycle of data warehouse development:
 
 - Business process analysis and metrics definition
@@ -53,6 +54,7 @@ This project demonstrates the full lifecycle of data warehouse development:
 - OLAP cube implementation
 
 **Project Implementation**
+
 The ETL process is implemented as an SSIS project in Visual Studio, integrating:
 
 - Data extraction from source database
